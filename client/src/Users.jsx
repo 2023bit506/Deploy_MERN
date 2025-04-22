@@ -9,7 +9,7 @@ function Users() {
 
     // Fetch users from the backend
     useEffect(() => {
-        axios.get('http://localhost:3001')
+        axios.get('http://localhost:3001/')  // Ensure you're using the right URL
             .then(result => {
                 setUsers(result.data);
                 setLoading(false);
@@ -25,7 +25,7 @@ function Users() {
     const handleDelete = (id) => {
         const confirmDelete = window.confirm("Are you sure you want to delete this user?");
         if (confirmDelete) {
-            axios.delete('https://deploy-mern-api1.vercel.app/deleteUser/' + id)
+            axios.delete(`http://localhost:3001/deleteUser/${id}`)  // Make sure this URL is correct
                 .then(res => {
                     console.log(res);
                     setUsers(users.filter(user => user._id !== id));  // Remove the deleted user from the state
