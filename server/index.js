@@ -5,10 +5,11 @@ const UserModel = require('./models/Users');
 
 const app = express();
 
-// CORS configuration to allow all origins for testing purposes
+// CORS configuration to allow specific frontend origin (e.g., production frontend URL)
 app.use(cors({
-    origin: '*', // Temporarily allow all origins for testing
-    methods: ["POST", "GET", "PUT", "DELETE"], // Include all relevant HTTP methods
+    origin: 'https://deploy-mern-frontend-beryl.vercel.app', // Replace with your actual frontend URL
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],  // Allow specific headers for security
     credentials: true
 }));
 
