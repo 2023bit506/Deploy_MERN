@@ -75,7 +75,7 @@ function Users() {
     }, []);
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/deleteUser/' + id)
+        axios.delete('https://deploy-mern-frontend-beryl.vercel.app' + id)
             .then(res => {
                 console.log(res);
                 window.location.reload();
