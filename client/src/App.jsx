@@ -6,8 +6,6 @@ import Users from './Users'
 import CreateUser from './CreateUser'
 import UpdateUser from './UpdateUser'
 
-// Backend API base URL
-export const BASE_URL = 'https://deploy-mern-api1.vercel.app';
 
 function App() {
   const [count, setCount] = useState(0)
