@@ -69,7 +69,7 @@ function CreateUser () {
 
   const Submit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3001/createUser", {
+    axios.post("https://deploy-mern-api1.vercel.app/createUser", {
       name,
       email,
       age,
