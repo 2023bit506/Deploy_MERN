@@ -93,7 +93,7 @@ function UpdateUser () {
 
   const Update = (e) => {
     e.preventDefault();
-    axios.put("https://deploy-mern-frontend-beryl.vercel.app/updateUser/" + id, {
+    axios.put("https://deploy-mern-api1.vercel.app/updateUser/" + id, {
       name, email, age, city, date
     })
       .then(result => {
