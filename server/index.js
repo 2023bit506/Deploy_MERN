@@ -88,6 +88,6 @@ app.post("/createUser", (req, res) => {
 });
 
 // Start server
-// app.listen(3001, () => {
-//     console.log("✅ Server is Running on http://localhost:3001");
-// });
+app.listen(3001, () => {
+    console.log("✅ Server is Running on http://localhost:3001");
+});
