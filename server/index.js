@@ -7,9 +7,9 @@ const app = express();
 
 // CORS configuration to allow specific frontend origin (e.g., production frontend URL)
 app.use(cors({
-    origin: 'https://deploy-mern-frontend-beryl.vercel.app', // Replace with your actual frontend URL
+    origin: ["https://deploy-mern-1whq.vercel.app"], // Replace with your actual frontend URL
     methods: ["POST", "GET", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],  // Allow specific headers for security
+    // allowedHeaders: ["Content-Type", "Authorization"],  // Allow specific headers for security
     credentials: true
 }));
 
